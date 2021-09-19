@@ -3,12 +3,16 @@ from numpy.core.fromnumeric import size
 from scipy import stats
 import re
 
-print("Calculadora de Media, Mediana y Moda")
+
 
 enter_data = input("Ingrese los datos separados por espacios o comas (' ', ','),\n"\
                     "los valores decimales señalados por puntos ('.')\n"\
                     "y evite los caracteres alfabeticos diferentes a los indicados antes\n\n"\
                     "Datos: ")
+
+class data():
+
+    def 
 
 data_pure = re.sub("[a-zA-Z]|,", "", enter_data.strip())
 data_str = re.split(" ", data_pure)
