@@ -7,7 +7,7 @@ class table():
 
     def exec(self):
 
-        enter_data = input("\nIngrese los datos separados por espacios o comas (' ', ','),\n"\
+        enter_data = input("Ingrese los datos separados por espacios o comas (' ', ','),\n"\
                     "los valores decimales señalados por puntos ('.')\n"\
                     "y evite introducir cualquier cosa que no represente un dato\n\n"\
                     "Datos: ")
@@ -24,15 +24,18 @@ class table():
         self.clean_screen(True)
         
         copy = input("Desea:\n"\
-                    "1. Guardar en el portapapeles"\
-                    "2. Guardar en un archivo Excel"\
-                    "3. Guardar en un archivo .csv"\
-                    "4. Todas las anteriores"\
-                    "5. No guardar")
+                    "1. Guardar en el portapapeles\n"\
+                    "2. Guardar en un archivo Excel\n"\
+                    "3. Guardar en un archivo .csv\n"\
+                    "4. Todas las anteriores\n"\
+                    "5. No guardar\n"\
+                    "Opcion: ")
         
-        data().save_table(table_frec, copy)
+        if copy in range(1, 5):
+        
+            data().save_table(table_frec, copy)
 
-        print("Proceso completado")
+            print("Proceso completado")
 
         self.clean_screen(True)
     
