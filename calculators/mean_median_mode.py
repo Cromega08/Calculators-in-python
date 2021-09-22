@@ -4,14 +4,11 @@ from scipy import stats
 import re
 import os
 
-class estadistic():
+class statistic():
 
     def exec(self):
 
-        enter_data = input("Ingrese los datos separados por espacios o comas (' ', ','),\n"\
-                    "los valores decimales señalados por puntos ('.')\n"\
-                    "y evite los caracteres alfabeticos diferentes a los indicados antes\n\n"\
-                    "Datos: ")
+        enter_data = data().enter()
 
         self.clear_screen()
         
@@ -41,6 +38,15 @@ class estadistic():
             os.system("clear")
 
 class data():
+
+    def enter(self):
+
+        enter_data = input("Ingrese los datos separados por espacios o comas (' ', ','),\n"\
+                    "los valores decimales señalados por puntos ('.')\n"\
+                    "y evite los caracteres alfabeticos diferentes a los indicados antes\n\n"\
+                    "Datos: ")
+
+        return enter_data
 
     def pure_data(self, enter_data):
 

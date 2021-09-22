@@ -28,7 +28,7 @@ class table():
                     "2. Guardar en un archivo Excel\n"\
                     "3. Guardar en un archivo .csv\n"\
                     "4. Todas las anteriores\n"\
-                    "5. No guardar\n"\
+                    "5. No guardar\n\n"\
                     "Opcion: ")
         
         if copy in range(1, 5):
